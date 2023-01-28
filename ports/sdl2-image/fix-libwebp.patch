@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9abeefb..94ab5bc 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -607,7 +607,7 @@ if(SDL2IMAGE_WEBP)
+         list(APPEND INSTALL_EXTRA_TARGETS webp)
+     else()
+         message(STATUS "${PROJECT_NAME}: Using system libwebp")
+-        find_package(webp REQUIRED)
++        find_package(WebP CONFIG REQUIRED)
+         list(APPEND PC_REQUIRES libwebp)
+     endif()
+     if(SDL2IMAGE_WEBP_SHARED)
