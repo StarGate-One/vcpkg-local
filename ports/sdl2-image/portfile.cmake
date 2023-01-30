@@ -7,7 +7,6 @@ vcpkg_from_github(
     HEAD_REF main
     PATCHES
         fix-pkgconfig.patch
-        fix-libwebp.patch
 )
 
 vcpkg_check_features(
